@@ -10,6 +10,7 @@ var GitHubStrategy = require('passport-github2').Strategy;
 var handlebars  = require('express-handlebars').create({defaultLayout:'layout'});
 
 var mongoose = require('mongoose');
+// 1. add data from db
 // mongoose.connect('mongodb://<dbuser>:<dbpassword>...');
 
 var User = mongoose.Schema({
@@ -18,9 +19,9 @@ var User = mongoose.Schema({
 });
 var githubUser = mongoose.model('users', User);
 
-
-var GITHUB_CLIENT_ID = "your-client-id";
-var GITHUB_CLIENT_SECRET = "your-client-secret";
+// 2. add data from github
+// var GITHUB_CLIENT_ID = "your-client-id";
+// var GITHUB_CLIENT_SECRET = "your-client-secret";
 
 passport.serializeUser(function(user, done) {
   done(null, user);
