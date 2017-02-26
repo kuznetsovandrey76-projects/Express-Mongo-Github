@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "app.js",
+  "author": "andrey kuznetsov",
+  "license": "ISC",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.1",
+    "mongoose": "^4.8.5",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.10"
+  }
+}
